@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO VALLE AUTOMOVEIS | Novos e Seminovos Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b',
+                        },
+                        dark: {
+                            50: '#f9fafb',
+                            100: '#f3f4f6',
+                            800: '#1f2937',
+                            900: '#111827',
+                            950: '#030712',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(3, 7, 18, 0.75), rgba(3, 7, 18, 0.95)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-dark-950 text-dark-50 font-sans antialiased selection:bg-brand-500 selection:text-dark-950">
+
+    <header class="fixed top-0 left-0 w-full z-40 bg-dark-950/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-bold tracking-wider text-white">ECO VALLE</span>
+                    <span class="text-xs text-brand-500 tracking-widest font-semibold">AUTOMÓVEIS</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-sm font-medium text-dark-100 hover:text-brand-500 transition-colors duration-300">Início</a>
+                <a href="#sobre" class="text-sm font-medium text-dark-100 hover:text-brand-500 transition-colors duration-300">Nossa Essência</a>
+                <a href="#servicos" class="text-sm font-medium text-dark-100 hover:text-brand-500 transition-colors duration-300">Experiências</a>
+                <a href="#diferenciais" class="text-sm font-medium text-dark-100 hover:text-brand-500 transition-colors duration-300">Excelência</a>
+                <a href="#processo" class="text-sm font-medium text-dark-100 hover:text-brand-500 transition-colors duration-300">Jornada</a>
+                <a href="#contato" class="text-sm font-medium text-dark-100 hover:text-brand-500 transition-colors duration-300">Contato</a>
+            </nav>
+
+            <button onclick="openModal()" class="relative group overflow-hidden px-6 py-2.5 rounded-full bg-gradient-to-r from-brand-600 to-brand-500 text-white text-sm font-semibold tracking-wide hover:shadow-lg hover:shadow-brand-500/25 transition-all duration-300 active:scale-95">
+                <span class="relative z-10">Solicitar Atendimento</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-500 to-brand-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.08),transparent_50%)]"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10 py-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-semibold uppercase tracking-widest mb-8 animate-fade-in">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
+                    <span>Liderança e Confiança no Vale</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                    O caminho para a sua próxima grande conquista começa aqui.
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 font-normal max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Descubra uma curadoria exclusiva de veículos novos e seminovos que unem sofisticação, desempenho e máxima segurança para guiar você rumo ao extraordinário.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="openModal()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-dark-950 font-bold hover:bg-brand-500 hover:text-white transition-all duration-300 shadow-xl shadow-black/20 hover:shadow-brand-500/20">
+                        Iniciar Atendimento
+                    </button>
+                    <a href="#sobre" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition-all duration-300 text-center">
+                        Conhecer a Eco Valle
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
+                <span class="text-xs tracking-widest text-gray-500 mb-2">DESCOBRIR MAIS</span>
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </</svg>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-24 sm:py-32 px-6 bg-dark-950 relative overflow-hidden">
+            <div class="absolute top-1/2 left-0 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl"></div>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-brand-500/10 rounded-2xl z-0"></div>
+                    <div class="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=800" alt="Consultoria automotiva personalizada" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+                <div class="lg:col-span-7 flex flex-col justify-center">
+                    <span class="text-sm font-semibold text-brand-500 tracking-widest uppercase mb-3">Nossa Essência</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                        Moldando o mercado automotivo com integridade e excelência absoluta.
+                    </h2>
+                    <div class="space-y-6 text-gray-400 text-base sm:text-lg leading-relaxed">
+                        <p>
+                            Fundada com a proposta de redefinir o conceito de aquisição de automóveis em Cruzeiro e em todo o Vale do Paraíba, a Eco Valle Automóveis nasceu do desejo de proporcionar transparência total a cada transação. Nós entendemos que um automóvel não é apenas um meio de transporte, mas sim uma extensão das suas ambições cotidianas e familiares.
+                        </p>
+                        <p>
+                            Nossa trajetória é pavimentada por uma curadoria extremamente rigorosa, na qual selecionamos detalhadamente cada modelo que entra em nosso portfólio de novos e seminovos de alto padrão. Unimos tradição com metodologias inovadoras de avaliação para assegurar que cada veículo entregue esteja em perfeitas condições mecânicas, estruturais e estéticas.
+                        </p>
+                        <p>
+                            Mais do que fechar vendas, nós construímos relacionamentos sólidos e duradouros com nossos clientes baseados na confiança recíproca. Na Eco Valle, nos orgulhamos de oferecer um ecossistema completo de suporte que acompanha você desde a primeira visita até as revisões futuras de sua nova conquista.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-24 sm:py-32 px-6 bg-dark-900/50 border-y border-white/5 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-sm font-semibold text-brand-500 tracking-widest uppercase mb-3">Experiências</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                        Soluções automotivas desenhadas para o seu estilo de vida.
+                    </h2>
+                    <p class="text-gray-400 text-base sm:text-lg">
+                        Oferecemos uma gama completa de serviços para garantir que a sua jornada de compra e posse seja fluida, segura e totalmente satisfatória.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group bg-dark-950 p-8 rounded-2xl border border-white/5 hover:border-brand-500/20 transition-all duration-300 shadow-xl shadow-black/10 hover:-translate-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-6 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-4">Curadoria Exclusiva</h3>
+                            <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                                Selecionamos cada veículo do nosso estoque por meio de um processo rigoroso e focado em alta qualidade de conservação. Garantimos que você tenha acesso apenas ao melhor do mercado automotivo moderno de novos e seminovos certificados. Essa dedicação nos permite oferecer modelos diferenciados que realmente superam todas as expectativas de nossos clientes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-dark-950 p-8 rounded-2xl border border-white/5 hover:border-brand-500/20 transition-all duration-300 shadow-xl shadow-black/10 hover:-translate-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-6 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-4">Laudo Técnico Cautelar</h3>
+                            <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                                Realizamos análises completas e minuciosas do histórico de sinistros, quilometragem e condições estruturais de cada automóvel em estoque. Proporcionamos a você a certeza de adquirir um veículo totalmente regularizado, seguro e sem qualquer vício oculto pendente. Este nível de segurança técnica é o pilar que sustenta a confiança de nossa prestigiada clientela regional.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group bg-dark-950 p-8 rounded-2xl border border-white/5 hover:border-brand-500/20 transition-all duration-300 shadow-xl shadow-black/10 hover:-translate-y-2 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-6 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-4">Financiamento Sob Medida</h3>
+                            <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                                Desenvolvemos parcerias estratégicas com as principais instituições financeiras do país para garantir taxas e condições altamente exclusivas para você. Oferecemos simulações dinâmicas e processos desburocratizados para acelerar sua aprovação de crédito com total clareza e transparência financeira. Seu próximo passo em direção ao carro ideal é planejado com soluções customizadas de parcelas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferenciais" class="py-24 sm:py-32 px-6 bg-dark-950 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-sm font-semibold text-brand-500 tracking-widest uppercase mb-3">Excelência</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                        Por que a Eco Valle é a escolha ideal para você.
+                    </h2>
+                    <p class="text-gray-400 text-base sm:text-lg">
+                        Acreditamos que a confiança é conquistada através de pequenos detalhes focados na transparência constante.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-dark-900/40 p-8 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-colors duration-300">
+                        <div class="text-brand-500 font-extrabold text-3xl mb-4">01</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Transparência Irrevogável</h3>
+                        <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                            Fornecemos acesso integral e irrestrito ao histórico documental e de manutenção de cada veículo, sem letras miúdas ou surpresas negativas futuras.
+                        </p>
+                    </div>
+
+                    <div class="bg-dark-900/40 p-8 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-colors duration-300">
+                        <div class="text-brand-500 font-extrabold text-3xl mb-4">02</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Atendimento Customizado</h3>
+                        <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                            Cada cliente possui necessidades exclusivas; nossos consultores focam em entender profundamente suas demandas para indicar o modelo perfeitamente compatível.
+                        </p>
+                    </div>
+
+                    <div class="bg-dark-900/40 p-8 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-colors duration-300">
+                        <div class="text-brand-500 font-extrabold text-3xl mb-4">03</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Garantia Integrada Estendida</h3>
+                        <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                            Muito além da conformidade legal, oferecemos prazos estendidos de garantia para que você possa usufruir de sua nova aquisição com total tranquilidade mental.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo" class="py-24 sm:py-32 px-6 bg-dark-900/30 border-t border-white/5 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="text-sm font-semibold text-brand-500 tracking-widest uppercase mb-3">Jornada</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                        O caminho simples para o seu próximo carro.
+                    </h2>
+                    <p class="text-gray-400 text-base sm:text-lg">
+                        Estruturamos um processo ágil e focado na sua conveniência, do primeiro contato à entrega das chaves.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-brand-500/0 via-brand-500/20 to-brand-500/0 -translate-y-12 -z-10"></div>
+                    
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="w-16 h-16 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-500 text-xl font-bold mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Agendamento & Seleção</h3>
+                        <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs">
+                            Você escolhe o modelo ideal através de nossa plataforma digital e agenda um atendimento consultivo presencial.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="w-16 h-16 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-500 text-xl font-bold mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Test Drive & Vistoria</h3>
+                        <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs">
+                            Você experimenta a dinâmica de condução do carro enquanto analisamos juntos todas as certificações e laudos técnicos.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="w-16 h-16 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-500 text-xl font-bold mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Assinatura & Entrega</h3>
+                        <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-xs">
+                            Finalizamos todos os trâmites burocráticos de forma rápida para entregar as chaves e o veículo higienizado na sua garagem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-24 sm:py-32 px-6 bg-dark-950 relative overflow-hidden">
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl"></div>
+            <div class="max-w-5xl mx-auto relative z-10">
+                <div class="bg-gradient-to-tr from-dark-900 to-dark-900/50 rounded-3xl p-8 sm:p-16 border border-white/5 text-center shadow-2xl shadow-black/50">
+                    <span class="text-sm font-semibold text-brand-500 tracking-widest uppercase mb-3 block">Fale Conosco</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                        Pronto para dar o próximo passo na sua jornada?
+                    </h2>
+                    <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                        Envie-nos uma mensagem diretamente pelo formulário oficial para agendar sua visita consultiva exclusiva ou esclarecer quaisquer dúvidas técnicas sobre nosso portfólio disponível.
+                    </p>
+                    <button onclick="openModal()" class="px-8 py-4 rounded-full bg-brand-500 hover:bg-brand-600 text-white font-bold text-base tracking-wide hover:shadow-lg hover:shadow-brand-500/20 transition-all duration-300 active:scale-95">
+                        Agendar Atendimento Exclusivo
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-950 border-t border-white/5 py-12 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4 text-center md:text-left">
+                <a href="#" class="inline-flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-500 flex items-center justify-center shadow-lg shadow-brand-500/20">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="text-base font-bold tracking-wider text-white">ECO VALLE</span>
+                        <span class="text-[10px] text-brand-500 tracking-widest font-semibold">AUTOMÓVEIS</span>
+                    </div>
+                </a>
+                <p class="text-sm text-gray-500 max-w-sm">
+                    Elevando os padrões de excelência na comercialização de veículos novos e seminovos multimarcas de confiança.
+                </p>
+            </div>
+
+            <div class="space-y-6 text-center md:text-right">
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-brand-500 tracking-widest uppercase block">Localização Premium</span>
+                    <address class="text-sm text-gray-300 not-italic">
+                        Rua Joaquim Amelio 15 Vila Regina Celia,<br>Cruzeiro SP, Brasil
+                    </address>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-brand-500 tracking-widest uppercase block">Correspondência Corporativa</span>
+                    <a href="mailto:cutomermail@ecovalleautomoveis.org" class="text-sm text-white hover:text-brand-500 transition-colors duration-300 font-medium">
+                        cutomermail@ecovalleautomoveis.org
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-gray-600 text-center sm:text-left">
+                &copy; 2026 ECO VALLE AUTOMOVEIS. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-xs text-gray-600 hover:text-brand-500 transition-colors duration-300">Políticas de Privacidade</a>
+                <a href="#" class="text-xs text-gray-600 hover:text-brand-500 transition-colors duration-300">Termos de Uso de Dados</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contactModal" class="fixed inset-0 z-50 invisible opacity-0 transition-all duration-300 flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-dark-950/60 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="relative bg-dark-900 border border-white/10 rounded-2xl w-full max-w-lg p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300" id="modalContainer">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </</svg>
+            </button>
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-white mb-2">Solicitar Atendimento</h3>
+                <p class="text-sm text-gray-400">Insira as informações de contato solicitadas para darmos início ao seu atendimento sob medida.</p>
+            </div>
+            <form id="contactForm" onsubmit="submitForm(event)" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-xs font-semibold text-gray-300 tracking-wider uppercase mb-1.5">Nome Completo</label>
+                    <input type="text" id="name" required class="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all duration-300">
+                </div>
+                <div>
+                    <label for="email" class="block text-xs font-semibold text-gray-300 tracking-wider uppercase mb-1.5">Endereço de E-mail</label>
+                    <input type="email" id="email" required class="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all duration-300">
+                </div>
+                <div>
+                    <label for="message" class="block text-xs font-semibold text-gray-300 tracking-wider uppercase mb-1.5">Sua Mensagem</label>
+                    <textarea id="message" rows="4" required class="w-full bg-dark-950 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all duration-300 resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold tracking-wide transition-all duration-300 active:scale-95 shadow-lg shadow-brand-500/10">
+                    Enviar Solicitação
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successModal" class="fixed inset-0 z-50 invisible opacity-0 transition-all duration-300 flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-dark-950/60 backdrop-blur-md" onclick="closeSuccessModal()"></div>
+        <div class="relative bg-dark-900 border border-white/10 rounded-2xl w-full max-w-sm p-8 text-center shadow-2xl transform scale-95 opacity-0 transition-all duration-300" id="successContainer">
+            <div class="w-16 h-16 bg-brand-500/10 text-brand-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Mensagem Enviada!</h3>
+            <p class="text-sm text-gray-400 mb-6">Sua mensagem foi transmitida com sucesso aos nossos especialistas de plantão. Retornaremos via e-mail o mais breve possível.</p>
+            <button onclick="closeSuccessModal()" class="w-full py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold tracking-wide transition-all duration-300 active:scale-95">
+                Prosseguir
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('contactModal');
+        const modalContainer = document.getElementById('modalContainer');
+        const successModal = document.getElementById('successModal');
+        const successContainer = document.getElementById('successContainer');
+        const contactForm = document.getElementById('contactForm');
+
+        function openModal() {
+            modal.classList.remove('invisible');
+            modal.classList.add('opacity-100');
+            setTimeout(() => {
+                modalContainer.classList.remove('scale-95', 'opacity-0');
+                modalContainer.classList.add('scale-100', 'opacity-100');
+            }, 50);
+        }
+
+        function closeModal() {
+            modalContainer.classList.remove('scale-100', 'opacity-100');
+            modalContainer.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('invisible');
+                modal.classList.remove('opacity-100');
+            }, 300);
+        }
+
+        function openSuccessModal() {
+            successModal.classList.remove('invisible');
+            successModal.classList.add('opacity-100');
+            setTimeout(() => {
+                successContainer.classList.remove('scale-95', 'opacity-0');
+                successContainer.classList.add('scale-100', 'opacity-100');
+            }, 50);
+        }
+
+        function closeSuccessModal() {
+            successContainer.classList.remove('scale-100', 'opacity-100');
+            successContainer.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                successModal.classList.add('invisible');
+                successModal.classList.remove('opacity-100');
+            }, 300);
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            closeModal();
+            setTimeout(() => {
+                openSuccessModal();
+                contactForm.reset();
+            }, 350);
+        }
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-dark-950/95', 'shadow-lg', 'shadow-black/20');
+            } else {
+                header.classList.remove('bg-dark-950/95', 'shadow-lg', 'shadow-black/20');
+            }
+        });
+    </script>
+</body>
+</html>
